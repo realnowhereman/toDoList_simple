@@ -1,0 +1,103 @@
+body {
+  font-family: sans-serif;
+}
+
+.container {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.deals__header {
+  background-color: #f44336;
+  color: #fff;
+  padding: 30px 40px;
+}
+
+.deals__title {
+  text-align: center;
+}
+
+.deals__adding {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.deals__input {
+  margin: 0;
+  border: none;
+  width: 75%;
+  padding: 9px;
+}
+
+.deals__item {
+  cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  background-color: #eee;
+  font-size: 18px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.deals__item:nth-child(odd) {
+  background-color: #f9f9f9;
+}
+
+.deals__item:hover {
+  background-color: #ddd;
+}
+
+.deals__item.checked {
+  background-color: #888;
+  color: #fff;
+  text-decoration: line-through;
+}
+
+.deals__item.checked::before {
+  content: "";
+  height: 15px;
+  width: 7px;
+  position: absolute;
+  top: 10px;
+  left: 16px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  border-color: #fff;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+}
+
+.adding__button {
+  padding: 10px;
+  width: 25%;
+  background-color: #d9d9d9;
+  color: #555;
+  text-align: center;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.adding__button:hover {
+  background-color: #bbb;
+}
+
+.close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 12px 16px;
+}
+
+.close:hover {
+  background-color: #f44336;
+  color: #fff;
+}
